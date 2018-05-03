@@ -1,9 +1,9 @@
 //
 //  LoadingHeaderFooterView.swift
-//  SweatMotion
+//  FreshGIFs
 //
-//  Created by Pavol Kmet on 24/04/2017.
-//  Copyright © 2017 GoodRequest. All rights reserved.
+//  Created by Róbert Grešo on 26/04/2018.
+//  Copyright © 2018 rgreso. All rights reserved.
 //
 
 import UIKit

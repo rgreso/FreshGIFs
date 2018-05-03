@@ -12,48 +12,29 @@ import GiphyCoreSDK
 
 let feedTableViewCellIdentifier = "FeedTableViewCell"
 
-extension Foundation.Notification.Name {
-    
-    static let GifHasBeenLiked = Foundation.Notification.Name("gifHasBeenLiked")
-    
-}
-
-extension Selector {
-    
-    static let reloadData = #selector(FeedViewController.reloadData(with:))
-    static let gifHasBeenLiked = #selector(FeedViewController.gifHasBeenLiked(_:))
-    
-}
-
 class FeedViewController: LoadMoreViewController {
     
     private var gifs = [GPHImage]()
+    private var searchTerm: String?
     
     private lazy var searchController: UISearchController = {
         let controller = UISearchController(searchResultsController: nil)
+        
         controller.searchBar.delegate = self
-        controller.searchBar.tintColor = view.tintColor
         controller.dimsBackgroundDuringPresentation = false
         controller.hidesNavigationBarDuringPresentation = false
-        
-        if #available(iOS 11.0, *) {
-            controller.searchBar.searchBarStyle = .minimal
-        } else {
-            controller.searchBar.isTranslucent = false
-            controller.searchBar.barTintColor = UIColor.color(r: 245, g: 245, b: 245)
-            controller.searchBar.layer.borderColor = controller.searchBar.barTintColor?.cgColor
-            controller.searchBar.layer.borderWidth = 1.0
-        }
+        controller.searchBar.tintColor = UIColor.fwPink
+        controller.searchBar.searchBarStyle = .minimal
+
         return controller
     }()
+    
+    // MARK: - Override
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //        UserDefaults.standard.set(nil, forKey: favouritesIdsKey)
-//        UserDefaults.standard.synchronize()
-        
-        emptyView = EmptyStateView.init(state: .emptyFollowing, frame: tableView.frame)
+        emptyView = EmptyStateView.init(state: .zeroResults, frame: tableView.frame)
         
         if #available(iOS 11, *) {
             navigationItem.hidesSearchBarWhenScrolling = false
@@ -62,7 +43,34 @@ class FeedViewController: LoadMoreViewController {
             tableView.tableHeaderView = searchController.searchBar
         }
 
-        NotificationCenter.default.addObserver(self, selector: .gifHasBeenLiked, name: .GifHasBeenLiked, object: nil)
+        NotificationCenter.default.addObserver(self, selector: .gifHasBeenLiked, name: .gifHasBeenLiked, object: nil)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        self.definesPresentationContext = true
+        
+        if searchTerm?.isEmpty == false {
+            self.searchController.isActive = true
+            searchController.searchBar.text = searchTerm
+        }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        searchTerm = searchController.searchBar.text
+        self.searchController.isActive = false
+        self.definesPresentationContext = false
+    }
+    
+    // MARK: - Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let controller = segue.destination as? PopUpViewController, let indexPath = tableView.indexPathForSelectedRow {
+            controller.gifUrl = gifs[indexPath.row].gifUrl
+        }
     }
     
     // MARK: - Selector
@@ -70,20 +78,14 @@ class FeedViewController: LoadMoreViewController {
     @objc func gifHasBeenLiked(_ notification: Foundation.Notification) {
         guard let mediaId = notification.object as? String else { return }
         
-        
         if let gif = gifs.enumerated().first(where: { $0.element.mediaId == mediaId }) {
-           
-            // SYNC or ASYNC???
-            
             DispatchQueue.main.async {
                 let cell = self.tableView.cellForRow(at: IndexPath(row: gif.offset, section: 0)) as? FeedTableViewCell
                 cell?.configureLikeButton(mediaId: mediaId)
             }
         }
-
     }
 
-    
     // MARK: - Stateful View Controller
     
     override func hasContent() -> Bool {
@@ -105,13 +107,13 @@ class FeedViewController: LoadMoreViewController {
     override func loadMoreData() {
         if gifs.count > 0 {
             isLoadingMore = true
-            loadUpcomingEvents(from: gifs.count)
+            loadUpcomingEvents(with: searchController.searchBar.text, from: gifs.count)
         }
     }
     
     // MARK: - Configure
     
-    func configure(_ responseClasses: [GPHImage], from offset: Int?) {
+    private func configure(_ responseClasses: [GPHImage], from offset: Int?) {
         Async.utility { () -> [GPHImage] in
             self.hasMoreData = !responseClasses.isEmpty && responseClasses.count % 20 == 0
             if let _ = offset {
@@ -131,40 +133,23 @@ class FeedViewController: LoadMoreViewController {
     
     // MARK: - Fetching
     
-    func loadUpcomingEvents(with term: String? = nil, from offset: Int? = nil) {
+    private func loadUpcomingEvents(with term: String? = nil, from offset: Int? = nil) {
         startLoading(animated: true, completion: nil)
         
-        let completionHandler = { (response: GPHListMediaResponse?, error: Error?) in
-            
+        RequestManager.shared.gifs(for: term, offset: offset ?? gifs.count) { (error, gifs, pagination) in
             if let error = error {
-                print("EROOOOR")
-                print(error.localizedDescription)
+                DispatchQueue.main.async {
+                    self.endLoading(animated: true, error: error, completion: nil)
+                }
+            } else {
+                self.configure(gifs, from: pagination)
             }
-            
-            if let response = response, let data = response.data, let pagination = response.pagination {
-                
-                var newGifs = [GPHImage]()
-                
-                data.forEach({
-                    if let gif = $0.images?.fixedWidth {
-                        newGifs.append(gif)
-                        print(gif.mediaId)
-                    }
-                })
-                
-                
-                self.configure(newGifs, from: pagination.count)
-            }
-        }
-        
-        if let term = term {
-            GiphyCore.shared.search(term, media: .gif, offset: offset ?? gifs.count, limit: 20, completionHandler: completionHandler)
-        } else {
-            GiphyCore.shared.trending(.gif, offset: offset ?? gifs.count, limit: 20, completionHandler: completionHandler)
         }
     }
-
+    
 }
+
+// MARK: - Table View Delegate
 
 extension FeedViewController: UITableViewDelegate {
     
@@ -177,6 +162,7 @@ extension FeedViewController: UITableViewDelegate {
     
 }
 
+// MARK: - Table View Data Source
 
 extension FeedViewController: UITableViewDataSource {
     
@@ -186,7 +172,7 @@ extension FeedViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: feedTableViewCellIdentifier, for: indexPath) as! FeedTableViewCell
-       
+
         cell.configure(with: gifs[indexPath.row], indexPath: indexPath, delegate: self)
         
         return cell
@@ -217,6 +203,8 @@ extension FeedViewController: UISearchBarDelegate {
     }
     
 }
+
+// MARK: Feed Table View Cell Delegate
 
 extension FeedViewController: FeedTableViewCellDelegate {
     

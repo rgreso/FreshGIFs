@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4B69BDF1E917429CECEDF81B4A126D45"
+               BlueprintIdentifier = "59E40703D321F72001B3D29153FDD987"
                BuildableName = "Pods_FreshGIFs.framework"
                BlueprintName = "Pods-FreshGIFs"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -26,7 +26,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -37,7 +36,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -47,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4B69BDF1E917429CECEDF81B4A126D45"
+            BlueprintIdentifier = "59E40703D321F72001B3D29153FDD987"
             BuildableName = "Pods_FreshGIFs.framework"
             BlueprintName = "Pods-FreshGIFs"
             ReferencedContainer = "container:Pods.xcodeproj">

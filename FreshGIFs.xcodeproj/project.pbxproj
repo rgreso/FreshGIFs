@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		262DFE1A20951E85005E8BD1 /* GIFLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262DFE1920951E85005E8BD1 /* GIFLib.swift */; };
 		262DFE1C20953677005E8BD1 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262DFE1B20953677005E8BD1 /* StorageManager.swift */; };
 		262DFE1E20978AF7005E8BD1 /* FavouriteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262DFE1D20978AF7005E8BD1 /* FavouriteCollectionViewCell.swift */; };
+		26464937209AF931004D98BE /* InfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26464936209AF931004D98BE /* InfoTableViewController.swift */; };
 		269A61FD20919066003B7182 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269A61FB20919066003B7182 /* FeedTableViewCell.swift */; };
 		269A620020919163003B7182 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269A61FF20919163003B7182 /* FeedViewController.swift */; };
 		269A62022091917B003B7182 /* FavouriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269A62012091917B003B7182 /* FavouriteViewController.swift */; };
@@ -22,18 +22,20 @@
 		269A62132092BE62003B7182 /* EmptyStateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 269A62112092BE62003B7182 /* EmptyStateView.xib */; };
 		269A62162092C679003B7182 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269A62152092C679003B7182 /* RequestManager.swift */; };
 		26A4A7C3209186FF009B56CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A4A7C2209186FF009B56CB /* AppDelegate.swift */; };
-		26A4A7C5209186FF009B56CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A4A7C4209186FF009B56CB /* ViewController.swift */; };
 		26A4A7C8209186FF009B56CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26A4A7C6209186FF009B56CB /* Main.storyboard */; };
-		26A4A7CA209186FF009B56CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26A4A7C9209186FF009B56CB /* Assets.xcassets */; };
 		26A4A7CD209186FF009B56CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26A4A7CB209186FF009B56CB /* LaunchScreen.storyboard */; };
+		26DB220F2099A24900A34D3E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DB220E2099A24900A34D3E /* Extensions.swift */; };
 		26F9BBA52098209A003E0B8E /* FavouriteGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F9BBA42098209A003E0B8E /* FavouriteGif.swift */; };
+		26F9BBAA20994E4E003E0B8E /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F9BBA920994E4E003E0B8E /* PopUpViewController.swift */; };
+		26F9BBAD209965F3003E0B8E /* ButtonWithShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F9BBAC209965F3003E0B8E /* ButtonWithShadow.swift */; };
+		26F9BBAF209970B5003E0B8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26F9BBAE209970B5003E0B8E /* Assets.xcassets */; };
 		BCDA6CDF6CA0B8B9E1D00B56 /* Pods_FreshGIFs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88909166E0F2145AAD29B72D /* Pods_FreshGIFs.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		262DFE1920951E85005E8BD1 /* GIFLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFLib.swift; sourceTree = "<group>"; };
 		262DFE1B20953677005E8BD1 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		262DFE1D20978AF7005E8BD1 /* FavouriteCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteCollectionViewCell.swift; sourceTree = "<group>"; };
+		26464936209AF931004D98BE /* InfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewController.swift; sourceTree = "<group>"; };
 		269A61FB20919066003B7182 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		269A61FF20919163003B7182 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		269A62012091917B003B7182 /* FavouriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewController.swift; sourceTree = "<group>"; };
@@ -47,12 +49,14 @@
 		269A62152092C679003B7182 /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
 		26A4A7BF209186FF009B56CB /* FreshGIFs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreshGIFs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26A4A7C2209186FF009B56CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		26A4A7C4209186FF009B56CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		26A4A7C7209186FF009B56CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		26A4A7C9209186FF009B56CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26A4A7CC209186FF009B56CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26A4A7CE209186FF009B56CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26DB220E2099A24900A34D3E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Layout/Extensions.swift; sourceTree = "<group>"; };
 		26F9BBA42098209A003E0B8E /* FavouriteGif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteGif.swift; sourceTree = "<group>"; };
+		26F9BBA920994E4E003E0B8E /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
+		26F9BBAC209965F3003E0B8E /* ButtonWithShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithShadow.swift; sourceTree = "<group>"; };
+		26F9BBAE209970B5003E0B8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D34DFDDC41A869CF26A48B2 /* Pods-FreshGIFs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreshGIFs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FreshGIFs/Pods-FreshGIFs.debug.xcconfig"; sourceTree = "<group>"; };
 		88909166E0F2145AAD29B72D /* Pods_FreshGIFs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreshGIFs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD874F8DB5CF8E4BE5EE7E8B /* Pods-FreshGIFs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreshGIFs.release.xcconfig"; path = "Pods/Target Support Files/Pods-FreshGIFs/Pods-FreshGIFs.release.xcconfig"; sourceTree = "<group>"; };
@@ -70,17 +74,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26464932209A64B1004D98BE /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				26A4A7C6209186FF009B56CB /* Main.storyboard */,
+				26A4A7CB209186FF009B56CB /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 		269A61F320918F9A003B7182 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				26464932209A64B1004D98BE /* Storyboard */,
+				26F9BBAE209970B5003E0B8E /* Assets.xcassets */,
+				26F9BBAB209965E0003E0B8E /* Button */,
 				269A620F2092BE30003B7182 /* EmptyStateView */,
 				269A620A2092BD7B003B7182 /* LoadingView */,
 				269A62052092B52A003B7182 /* HeaderFooterView */,
 				269A61F82091900C003B7182 /* CollectionViewCell */,
 				269A61F720919001003B7182 /* TableViewCell */,
-				26A4A7C9209186FF009B56CB /* Assets.xcassets */,
-				26A4A7C6209186FF009B56CB /* Main.storyboard */,
-				26A4A7CB209186FF009B56CB /* LaunchScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -88,7 +101,6 @@
 		269A61F520918FD0003B7182 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				262DFE1B20953677005E8BD1 /* StorageManager.swift */,
 				26F9BBA42098209A003E0B8E /* FavouriteGif.swift */,
 			);
 			path = Model;
@@ -97,9 +109,10 @@
 		269A61F620918FD6003B7182 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				26A4A7C4209186FF009B56CB /* ViewController.swift */,
 				269A61FF20919163003B7182 /* FeedViewController.swift */,
 				269A62012091917B003B7182 /* FavouriteViewController.swift */,
+				26F9BBA920994E4E003E0B8E /* PopUpViewController.swift */,
+				26464936209AF931004D98BE /* InfoTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -150,6 +163,7 @@
 		269A62142092C661003B7182 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				262DFE1B20953677005E8BD1 /* StorageManager.swift */,
 				269A62152092C679003B7182 /* RequestManager.swift */,
 			);
 			path = Manager;
@@ -159,7 +173,6 @@
 			isa = PBXGroup;
 			children = (
 				26A4A7C1209186FF009B56CB /* FreshGIFs */,
-				269A62142092C661003B7182 /* Manager */,
 				26A4A7C0209186FF009B56CB /* Products */,
 				47DBAD272517A9AB7DDF84B1 /* Pods */,
 				74295654B6530125EAABF87D /* Frameworks */,
@@ -179,13 +192,22 @@
 			children = (
 				26A4A7CE209186FF009B56CB /* Info.plist */,
 				26A4A7C2209186FF009B56CB /* AppDelegate.swift */,
+				26DB220E2099A24900A34D3E /* Extensions.swift */,
+				269A62032092AB56003B7182 /* LoadMoreViewController.swift */,
 				269A61F620918FD6003B7182 /* Controller */,
 				269A61F520918FD0003B7182 /* Model */,
 				269A61F320918F9A003B7182 /* View */,
-				269A62032092AB56003B7182 /* LoadMoreViewController.swift */,
-				262DFE1920951E85005E8BD1 /* GIFLib.swift */,
+				269A62142092C661003B7182 /* Manager */,
 			);
 			path = FreshGIFs;
+			sourceTree = "<group>";
+		};
+		26F9BBAB209965E0003E0B8E /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				26F9BBAC209965F3003E0B8E /* ButtonWithShadow.swift */,
+			);
+			path = Button;
 			sourceTree = "<group>";
 		};
 		47DBAD272517A9AB7DDF84B1 /* Pods */ = {
@@ -270,7 +292,7 @@
 				269A62092092BCE4003B7182 /* LoadingHeaderFooterView.xib in Resources */,
 				269A620D2092BDA8003B7182 /* LoadingView.xib in Resources */,
 				269A62132092BE62003B7182 /* EmptyStateView.xib in Resources */,
-				26A4A7CA209186FF009B56CB /* Assets.xcassets in Resources */,
+				26F9BBAF209970B5003E0B8E /* Assets.xcassets in Resources */,
 				26A4A7C8209186FF009B56CB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,11 +327,11 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-FreshGIFs/Pods-FreshGIFs-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AsyncSwift/Async.framework",
+				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
 				"${BUILT_PRODUCTS_DIR}/GiphyCoreSDK/GiphyCoreSDK.framework",
 				"${BUILT_PRODUCTS_DIR}/GoodSwift/GoodSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/PinterestLayout/PinterestLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/StatefulViewController/StatefulViewController.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftMessages/SwiftMessages.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyGif/SwiftyGif.framework",
 				"${BUILT_PRODUCTS_DIR}/Unbox/Unbox.framework",
 			);
@@ -317,11 +339,11 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Async.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GiphyCoreSDK.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoodSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PinterestLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StatefulViewController.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftMessages.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyGif.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Unbox.framework",
 			);
@@ -338,15 +360,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				269A62122092BE62003B7182 /* EmptyStateView.swift in Sources */,
-				26A4A7C5209186FF009B56CB /* ViewController.swift in Sources */,
-				262DFE1A20951E85005E8BD1 /* GIFLib.swift in Sources */,
+				26DB220F2099A24900A34D3E /* Extensions.swift in Sources */,
 				262DFE1C20953677005E8BD1 /* StorageManager.swift in Sources */,
 				269A61FD20919066003B7182 /* FeedTableViewCell.swift in Sources */,
 				269A620020919163003B7182 /* FeedViewController.swift in Sources */,
 				269A62042092AB56003B7182 /* LoadMoreViewController.swift in Sources */,
+				26F9BBAD209965F3003E0B8E /* ButtonWithShadow.swift in Sources */,
+				26F9BBAA20994E4E003E0B8E /* PopUpViewController.swift in Sources */,
 				269A62162092C679003B7182 /* RequestManager.swift in Sources */,
 				26F9BBA52098209A003E0B8E /* FavouriteGif.swift in Sources */,
 				269A62022091917B003B7182 /* FavouriteViewController.swift in Sources */,
+				26464937209AF931004D98BE /* InfoTableViewController.swift in Sources */,
 				269A620E2092BDA8003B7182 /* LoadingView.swift in Sources */,
 				26A4A7C3209186FF009B56CB /* AppDelegate.swift in Sources */,
 				262DFE1E20978AF7005E8BD1 /* FavouriteCollectionViewCell.swift in Sources */,
@@ -491,11 +515,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QR6RCK8S4B;
 				INFOPLIST_FILE = FreshGIFs/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sk.rgreso.FreshGIFs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -507,11 +532,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QR6RCK8S4B;
 				INFOPLIST_FILE = FreshGIFs/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sk.rgreso.FreshGIFs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

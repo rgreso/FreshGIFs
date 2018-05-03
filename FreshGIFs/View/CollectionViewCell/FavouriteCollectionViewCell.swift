@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FLAnimatedImage
+import PinterestLayout
 
 protocol FavouriteCollectionViewCellDelegate: class {
     
@@ -17,7 +19,7 @@ protocol FavouriteCollectionViewCellDelegate: class {
 class FavouriteCollectionViewCell: UICollectionViewCell {
  
     @IBOutlet weak var likeButton: UIButton!
-    @IBOutlet weak var GIFImageView: UIImageView!
+    @IBOutlet weak var imageView: FLAnimatedImageView!
     
     private var indexPath: IndexPath!
     
@@ -28,14 +30,14 @@ class FavouriteCollectionViewCell: UICollectionViewCell {
     override func prepareForReuse() {
         super.prepareForReuse()
         
-        GIFImageView.image = nil
-        likeButton.setImage(UIImage(named: "likeFilled"), for: .normal)
+        imageView.animatedImage = nil
+        likeButton.setImage(#imageLiteral(resourceName: "likeFilled"), for: .normal)
     }
     
     // MARK: - IBAction
     
     @IBAction func dislikeGif(_ sender: UIButton) {
-        likeButton.setImage(UIImage.init(named: "like"), for: .normal)
+        likeButton.setImage(#imageLiteral(resourceName: "like"), for: .normal)
         delegate?.favouriteCollectionViewCell(self, hasBeenDislikedAt: indexPath)
     }
     
@@ -45,9 +47,8 @@ class FavouriteCollectionViewCell: UICollectionViewCell {
         self.indexPath = indexPath
         self.delegate = delegate
         
-        if let filePath = downloadsPath?.appendingPathComponent("\(mediaId).gif"), let data = try? Data.init(contentsOf: filePath) {
-            GIFImageView.image = UIImage.gifImageWithData(data)
-        }
+        imageView.backgroundColor = UIColor.fwRandom
+        imageView.animatedImage = FLAnimatedImage.gif(for: mediaId)
     }
     
 }

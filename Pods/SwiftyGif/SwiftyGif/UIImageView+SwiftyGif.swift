@@ -100,7 +100,7 @@ public extension UIImageView {
      - Parameter loopCount: The number of loops we want for this gif. -1 means infinite.
      - Parameter showLoader: Show UIActivityIndicatorView or not
      */
-    public func setGifFromURL(_ url: URL?, manager: SwiftyGifManager = SwiftyGifManager.defaultManager, loopCount: Int = -1, showLoader: Bool = true) {
+    public func setGifFromURL(_ url: URL?, manager: SwiftyGifManager = SwiftyGifManager.defaultManager, loopCount: Int = -1, showLoader: Bool = true, for tag: Int? = nil) {
         
         guard let url = url else {
             print("Invalid Gif URL")
@@ -128,7 +128,7 @@ public extension UIImageView {
         let task = URLSession.shared.dataTask(with: url) { (data, _ , _) in
             DispatchQueue.main.async {
                 loader.removeFromSuperview()
-                if let data = data {
+                if let data = data, (self.tag == tag || tag == nil) {
                     self.delegate?.gifURLDidFinish?(sender: self)
                     self.setGifImage(UIImage.init(gifData: data), manager: manager, loopCount: loopCount)
                 } else {

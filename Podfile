@@ -6,11 +6,11 @@ target 'FreshGIFs' do
 
 	pod 'SwiftyGif', '~> 4.1'
     pod 'AsyncSwift'
-    pod 'ReachabilitySwift'
     pod 'StatefulViewController'
-    pod 'SwiftMessages'
-    pod 'GoodSwift'
     pod 'GiphyCoreSDK'
+    pod 'GoodSwift'
+    pod 'FLAnimatedImage', '~> 1.0'
+    pod 'PinterestLayout', '~> 1.0'
     
 end
 

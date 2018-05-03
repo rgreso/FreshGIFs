@@ -1,48 +1,48 @@
 PODS:
   - Alamofire (4.7.2)
   - AsyncSwift (2.0.4)
+  - FLAnimatedImage (1.0.12)
   - GiphyCoreSDK (1.2.0)
   - GoodSwift (0.9.0):
     - Alamofire (~> 4.5)
     - Unbox (~> 2.5)
-  - ReachabilitySwift (4.1.0)
+  - PinterestLayout (1.0.3)
   - StatefulViewController (3.0)
-  - SwiftMessages (4.1.2)
   - SwiftyGif (4.1.0)
   - Unbox (2.5.0)
 
 DEPENDENCIES:
   - AsyncSwift
+  - FLAnimatedImage (~> 1.0)
   - GiphyCoreSDK
   - GoodSwift
-  - ReachabilitySwift
+  - PinterestLayout (~> 1.0)
   - StatefulViewController
-  - SwiftMessages
   - SwiftyGif (~> 4.1)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - AsyncSwift
+    - FLAnimatedImage
     - GiphyCoreSDK
     - GoodSwift
-    - ReachabilitySwift
+    - PinterestLayout
     - StatefulViewController
-    - SwiftMessages
     - SwiftyGif
     - Unbox
 
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
   AsyncSwift: 65775a7b32e740609b24969ece3de58723b9dc3e
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   GiphyCoreSDK: 1278bfc2dbdc9f1b2b1703ee70224f515b9530a6
   GoodSwift: 70403ef48d8d040644f9ee3008c3038b30bc1b4e
-  ReachabilitySwift: 6849231cd4e06559f3b9ef4a97a0a0f96d41e09f
+  PinterestLayout: f1c7ec0254ffa842d69f1b43e4436c8ded4359b9
   StatefulViewController: 4803bf900d44de26074344998e10e041113b5931
-  SwiftMessages: d81f48c1f8b6bc1dbebdfffe11226f0344f937ca
   SwiftyGif: d36c6dfb52e2ca1e48fe349d225f50ec4123ec85
   Unbox: 30e437e6151a6de16139375fd4e8dd9a664cfbf7
 
-PODFILE CHECKSUM: 05b36fd5c8f634557f791e3da62fec5bf6979221
+PODFILE CHECKSUM: 3034ac34c5c6590fb6a44f95ecb7b8e0602cce41
 
 COCOAPODS: 1.5.0

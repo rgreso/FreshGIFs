@@ -9,6 +9,7 @@
 import UIKit
 import SwiftyGif
 import GiphyCoreSDK
+import FLAnimatedImage
 
 protocol FeedTableViewCellDelegate: class {
     
@@ -19,8 +20,9 @@ protocol FeedTableViewCellDelegate: class {
 
 class FeedTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var GIFImageView: UIImageView!
+    @IBOutlet weak var gifImageView: UIImageView!
     @IBOutlet weak var likeButton: UIButton!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     weak var delegate: FeedTableViewCellDelegate!
     
@@ -29,15 +31,18 @@ class FeedTableViewCell: UITableViewCell {
     // MARK: - Override
     
     override func prepareForReuse() {
-        super.prepareForReuse()
-
-        GIFImageView.image = nil
-        likeButton.setImage(UIImage(named: "like"), for: .normal)
+        super.prepareForReuse()        
+        
+        gifImageView.gifImage = nil
+        likeButton.setImage(#imageLiteral(resourceName: "like"), for: .normal)
     }
-    
+        
     // MARK: - IBAction
     
     @IBAction func likeGif(_ sender: UIButton) {
+        activityIndicator.startAnimating()
+        likeButton.isHidden = true
+        
         if let indexPath = indexPath {
             delegate?.feedTableViewCell(self, didPress: likeButton, at: indexPath)
         }
@@ -49,19 +54,24 @@ class FeedTableViewCell: UITableViewCell {
         self.delegate = delegate
         self.indexPath = indexPath
         
+        gifImageView.backgroundColor = UIColor.fwRandom
+        
         configureLikeButton(mediaId: gif.mediaId)
         
         if let stringURL = gif.gifUrl, let url = URL.init(string: stringURL) {
-            GIFImageView.setGifFromURL(url)
+            gifImageView.tag = indexPath.row
+            gifImageView.setGifFromURL(url, showLoader: true, for: indexPath.row)
         }
     }
     
     func configureLikeButton(mediaId: String) {
-        let favouritesIds = StorageManager.shared.favouriteGifs // UserDefaults.standard.stringArray(forKey: favouritesIdsKey) ?? [String]()
+        let favouritesIds = StorageManager.shared.favouriteGifs 
        
-         let image =  favouritesIds.contains(where: { $0.mediaId == mediaId }) ? UIImage.init(named: "likeFilled") : UIImage.init(named: "like")
-       // let image = favouritesIds.contains(FavouriteGif(from: mediaId)) ? UIImage.init(named: "likeFilled") : UIImage.init(named: "like")
+         let image =  favouritesIds.contains(where: { $0.mediaId == mediaId }) ? #imageLiteral(resourceName: "likeFilled") : #imageLiteral(resourceName: "like")
         DispatchQueue.main.async {
+            self.activityIndicator.stopAnimating()
+
+            self.likeButton.isHidden = false
             self.likeButton.setImage(image, for: .normal)
         }
     }

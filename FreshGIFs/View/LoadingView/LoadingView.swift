@@ -1,9 +1,9 @@
 //
 //  LoadingView.swift
-//  AppDay
+//  FreshGIFs
 //
-//  Created by Pavol Kmet on 25/01/2017.
-//  Copyright © 2017 GoodRequest, s.r.o. All rights reserved.
+//  Created by Róbert Grešo on 26/04/2018.
+//  Copyright © 2018 rgreso. All rights reserved.
 //
 
 import UIKit
@@ -14,11 +14,13 @@ class LoadingView: UIView, NibLoadable {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        
         loadViewFromNib(with: LoadingView.self)
     }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        
         loadViewFromNib(with: LoadingView.self)
     }
     
@@ -29,6 +31,7 @@ class LoadingView: UIView, NibLoadable {
         autoresizingMask = [.flexibleWidth, .flexibleHeight]
         view.autoresizingMask = autoresizingMask
         view.frame = bounds
+        
         addSubview(view);
     }
 
