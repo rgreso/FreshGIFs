@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import FLAnimatedImage
 import PinterestLayout
 
 protocol FavouriteCollectionViewCellDelegate: class {
@@ -19,7 +18,7 @@ protocol FavouriteCollectionViewCellDelegate: class {
 class FavouriteCollectionViewCell: UICollectionViewCell {
  
     @IBOutlet weak var likeButton: UIButton!
-    @IBOutlet weak var imageView: FLAnimatedImageView!
+    @IBOutlet weak var imageView: UIImageView!
     
     private var indexPath: IndexPath!
     
@@ -30,7 +29,7 @@ class FavouriteCollectionViewCell: UICollectionViewCell {
     override func prepareForReuse() {
         super.prepareForReuse()
         
-        imageView.animatedImage = nil
+        imageView.image = nil
         likeButton.setImage(#imageLiteral(resourceName: "likeFilled"), for: .normal)
     }
     
@@ -48,7 +47,7 @@ class FavouriteCollectionViewCell: UICollectionViewCell {
         self.delegate = delegate
         
         imageView.backgroundColor = UIColor.fwRandom
-        imageView.animatedImage = FLAnimatedImage.gif(for: mediaId)
+        imageView.setGifFromURL(documentPath?.appendingPathComponent("\(mediaId).gif"))
     }
     
 }

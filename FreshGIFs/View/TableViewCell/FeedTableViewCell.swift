@@ -67,7 +67,7 @@ class FeedTableViewCell: UITableViewCell {
     func configureLikeButton(mediaId: String) {
         let favouritesIds = StorageManager.shared.favouriteGifs 
        
-         let image =  favouritesIds.contains(where: { $0.mediaId == mediaId }) ? #imageLiteral(resourceName: "likeFilled") : #imageLiteral(resourceName: "like")
+        let image =  favouritesIds.contains(where: { $0.mediaId == mediaId }) ? #imageLiteral(resourceName: "likeFilled") : #imageLiteral(resourceName: "like")
         DispatchQueue.main.async {
             self.activityIndicator.stopAnimating()
 

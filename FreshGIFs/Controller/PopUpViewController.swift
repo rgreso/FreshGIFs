@@ -24,7 +24,7 @@ class PopUpViewController: UIViewController {
         if let stringUrl = gifUrl, let url = URL(string: stringUrl) {
             imageView.setGifFromURL(url)
         } else if let mediaId = mediaId {
-            imageView.animatedImage = FLAnimatedImage.gif(for: mediaId)
+            imageView.setGifFromURL(documentPath?.appendingPathComponent("\(mediaId).gif"))
         }
     }
 

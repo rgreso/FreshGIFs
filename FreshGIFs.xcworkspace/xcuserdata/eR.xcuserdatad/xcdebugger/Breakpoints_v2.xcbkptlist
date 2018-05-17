@@ -70,7 +70,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FreshGIFs/Controller/FavouriteViewController.swift"
-            timestampString = "547033129.226401"
+            timestampString = "547057852.653187"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "33"
@@ -86,7 +86,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FreshGIFs/Controller/FavouriteViewController.swift"
-            timestampString = "547033129.227131"
+            timestampString = "547057852.660578"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "34"
@@ -102,7 +102,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FreshGIFs/Controller/FavouriteViewController.swift"
-            timestampString = "547033129.227674"
+            timestampString = "547057852.660941"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "48"
@@ -118,11 +118,11 @@
                   moduleName = "FreshGIFs"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/eR/Development/XCode/FreshGIFs/FreshGIFs/Controller/FavouriteViewController.swift"
-                  timestampString = "547011492.3426321"
+                  timestampString = "547058133.95373"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "49"
-                  endingLineNumber = "49"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
                   offsetFromSymbolStart = "21">
                </Location>
                <Location
@@ -133,11 +133,11 @@
                   moduleName = "FreshGIFs"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/eR/Development/XCode/FreshGIFs/FreshGIFs/Controller/FavouriteViewController.swift"
-                  timestampString = "547011492.344383"
+                  timestampString = "547058133.9573539"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "50"
-                  endingLineNumber = "50"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
                   offsetFromSymbolStart = "18">
                </Location>
             </Locations>
@@ -150,7 +150,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FreshGIFs/Controller/FavouriteViewController.swift"
-            timestampString = "547033129.22823"
+            timestampString = "547057852.661373"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "22"
@@ -166,7 +166,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FreshGIFs/Controller/FavouriteViewController.swift"
-            timestampString = "547033129.228776"
+            timestampString = "547057852.661721"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "31"
@@ -182,7 +182,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FreshGIFs/Controller/FavouriteViewController.swift"
-            timestampString = "547033129.229334"
+            timestampString = "547057852.662165"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "63"
@@ -198,7 +198,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FreshGIFs/Controller/FavouriteViewController.swift"
-            timestampString = "547033129.229864"
+            timestampString = "547057852.662676"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "84"
@@ -214,7 +214,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FreshGIFs/Controller/FavouriteViewController.swift"
-            timestampString = "547033129.2305419"
+            timestampString = "547057852.663222"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "88"
@@ -230,7 +230,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FreshGIFs/Controller/FavouriteViewController.swift"
-            timestampString = "547033129.231298"
+            timestampString = "547057852.6636961"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "102"
@@ -246,11 +246,11 @@
                   moduleName = "FreshGIFs"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/eR/Development/XCode/FreshGIFs/FreshGIFs/Controller/FavouriteViewController.swift"
-                  timestampString = "547011492.368312"
+                  timestampString = "547058133.99897"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "103"
-                  endingLineNumber = "103"
+                  startingLineNumber = "102"
+                  endingLineNumber = "102"
                   offsetFromSymbolStart = "31">
                </Location>
                <Location
@@ -261,11 +261,11 @@
                   moduleName = "FreshGIFs"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/eR/Development/XCode/FreshGIFs/FreshGIFs/Controller/FavouriteViewController.swift"
-                  timestampString = "547011492.369969"
+                  timestampString = "547058134.0028501"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "104"
-                  endingLineNumber = "104"
+                  startingLineNumber = "103"
+                  endingLineNumber = "103"
                   offsetFromSymbolStart = "30">
                </Location>
             </Locations>
@@ -278,7 +278,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FreshGIFs/Controller/FavouriteViewController.swift"
-            timestampString = "547033129.231916"
+            timestampString = "547057852.664216"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "49"
@@ -290,27 +290,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FreshGIFs/Controller/PopUpViewController.swift"
-            timestampString = "547033129.23245"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FreshGIFs/View/TableViewCell/FeedTableViewCell.swift"
-            timestampString = "547033129.232518"
+            timestampString = "548209934.417648"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "47"
@@ -326,7 +310,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FreshGIFs/View/TableViewCell/FeedTableViewCell.swift"
-            timestampString = "547033129.232602"
+            timestampString = "548209934.417768"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "70"
@@ -374,7 +358,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FreshGIFs/View/TableViewCell/FeedTableViewCell.swift"
-            timestampString = "547033129.232676"
+            timestampString = "548209934.41783"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "71"
@@ -422,13 +406,61 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FreshGIFs/View/TableViewCell/FeedTableViewCell.swift"
-            timestampString = "547033129.232764"
+            timestampString = "548209934.417873"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "43"
             endingLineNumber = "43"
             landmarkName = "likeGif(_:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FreshGIFs/Manager/RequestManager.swift"
+            timestampString = "547058212.8549941"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "gifs(for:offset:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;GiphyCoreSDK.GPHListMediaResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in FreshGIFs.RequestManager.gifs(for: Swift.Optional&lt;Swift.String&gt;, offset: Swift.Int, completion: (Swift.Optional&lt;Swift.Error&gt;, Swift.Array&lt;GiphyCoreSDK.GPHImage&gt;, Swift.Optional&lt;Swift.Int&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "FreshGIFs"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eR/Development/XCode/FreshGIFs/FreshGIFs/Manager/RequestManager.swift"
+                  timestampString = "547058134.024645"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "268">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (GiphyCoreSDK.GPHMedia) -&gt; () in closure #1 (Swift.Optional&lt;GiphyCoreSDK.GPHListMediaResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in FreshGIFs.RequestManager.gifs(for: Swift.Optional&lt;Swift.String&gt;, offset: Swift.Int, completion: (Swift.Optional&lt;Swift.Error&gt;, Swift.Array&lt;GiphyCoreSDK.GPHImage&gt;, Swift.Optional&lt;Swift.Int&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "FreshGIFs"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eR/Development/XCode/FreshGIFs/FreshGIFs/Manager/RequestManager.swift"
+                  timestampString = "547058134.02795"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "25">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

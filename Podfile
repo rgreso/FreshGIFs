@@ -9,7 +9,6 @@ target 'FreshGIFs' do
     pod 'StatefulViewController'
     pod 'GiphyCoreSDK'
     pod 'GoodSwift'
-    pod 'FLAnimatedImage', '~> 1.0'
     pod 'PinterestLayout', '~> 1.0'
     
 end

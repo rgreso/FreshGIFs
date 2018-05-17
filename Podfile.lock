@@ -1,7 +1,6 @@
 PODS:
   - Alamofire (4.7.2)
   - AsyncSwift (2.0.4)
-  - FLAnimatedImage (1.0.12)
   - GiphyCoreSDK (1.2.0)
   - GoodSwift (0.9.0):
     - Alamofire (~> 4.5)
@@ -13,7 +12,6 @@ PODS:
 
 DEPENDENCIES:
   - AsyncSwift
-  - FLAnimatedImage (~> 1.0)
   - GiphyCoreSDK
   - GoodSwift
   - PinterestLayout (~> 1.0)
@@ -24,7 +22,6 @@ SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - AsyncSwift
-    - FLAnimatedImage
     - GiphyCoreSDK
     - GoodSwift
     - PinterestLayout
@@ -35,7 +32,6 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
   AsyncSwift: 65775a7b32e740609b24969ece3de58723b9dc3e
-  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   GiphyCoreSDK: 1278bfc2dbdc9f1b2b1703ee70224f515b9530a6
   GoodSwift: 70403ef48d8d040644f9ee3008c3038b30bc1b4e
   PinterestLayout: f1c7ec0254ffa842d69f1b43e4436c8ded4359b9
@@ -43,6 +39,6 @@ SPEC CHECKSUMS:
   SwiftyGif: d36c6dfb52e2ca1e48fe349d225f50ec4123ec85
   Unbox: 30e437e6151a6de16139375fd4e8dd9a664cfbf7
 
-PODFILE CHECKSUM: 3034ac34c5c6590fb6a44f95ecb7b8e0602cce41
+PODFILE CHECKSUM: bc87db0b258cee88a0be528059d9c0f67aafeaed
 
 COCOAPODS: 1.5.0
