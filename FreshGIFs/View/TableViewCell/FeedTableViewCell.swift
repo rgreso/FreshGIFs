@@ -9,7 +9,6 @@
 import UIKit
 import SwiftyGif
 import GiphyCoreSDK
-import FLAnimatedImage
 
 protocol FeedTableViewCellDelegate: class {
     

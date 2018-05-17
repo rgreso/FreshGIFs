@@ -7,11 +7,10 @@
 //
 
 import UIKit
-import FLAnimatedImage
 
 class PopUpViewController: UIViewController {
 
-    @IBOutlet weak var imageView: FLAnimatedImageView!
+    @IBOutlet weak var imageView: UIImageView!
     
     var mediaId: String?
     var gifUrl: String?

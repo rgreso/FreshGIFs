@@ -376,7 +376,7 @@
                                     <action selector="dismiss:" destination="26C-AF-bCY" eventType="touchUpInside" id="AvP-3I-R6i"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4CO-ES-tma" customClass="FLAnimatedImageView">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4CO-ES-tma">
                                 <rect key="frame" x="0.0" y="33.5" width="375" height="600"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="600" id="Ob4-QN-Dei"/>
@@ -404,7 +404,7 @@
                         <viewLayoutGuide key="safeArea" id="uIx-ee-VTg"/>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="4CO-ES-tma" id="1oL-Yn-sOT"/>
+                        <outlet property="imageView" destination="4CO-ES-tma" id="Ddq-zm-S22"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fOn-4e-Koh" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -8,7 +8,6 @@
 
 import UIKit
 import GoodSwift
-import FLAnimatedImage
 import MessageUI
 import SafariServices
 
@@ -61,18 +60,6 @@ extension Selector {
     
     static let reloadData = #selector(FeedViewController.reloadData(with:))
     static let gifHasBeenLiked = #selector(FeedViewController.gifHasBeenLiked(_:))
-    
-}
-
-// MARK: - FLAnimated Image
-
-extension FLAnimatedImage {
-    
-    static func gif(for mediaId: String) -> FLAnimatedImage? {
-        guard let url = documentPath?.appendingPathComponent("\(mediaId).gif"), let data = try? Data.init(contentsOf: url) else { return nil }
-        
-        return FLAnimatedImage(animatedGIFData: data)
-    }
     
 }
 

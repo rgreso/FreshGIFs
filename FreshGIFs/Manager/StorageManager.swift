@@ -8,7 +8,6 @@
 
 import UIKit
 import GiphyCoreSDK
-import FLAnimatedImage
 
 let favouriteGifsKey = "favouritesGifs"
 let documentPath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first
