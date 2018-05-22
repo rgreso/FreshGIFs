@@ -157,6 +157,8 @@ extension FeedViewController: UITableViewDelegate {
         let gif = gifs[indexPath.row]
         let aspectRation = Double(gif.height) / Double(gif.width)
         
+        guard !aspectRation.isNaN else { return 0 }
+        
         return view.bounds.width * CGFloat(aspectRation)
     }
     
